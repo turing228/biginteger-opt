@@ -6,5 +6,5 @@ CXX_FLAGS =  -fuse-ld=gold -Wall -std=c++11 -pedantic -g -fsanitize=address,unde
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jesus/cpp-course-master/bigint 
+CXX_INCLUDES = -I/home/jesus/cpp-course-master/bigint-opt 
 

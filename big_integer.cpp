@@ -9,8 +9,6 @@ const unsigned int MAX = UINT32_MAX;
 const unsigned int BASE = 32;
 const int BASE10 = 1000000000;
 
-using std::vector;
-
 template<typename T>
 unsigned int castUnsignedInt(T x) {
     return static_cast<unsigned int>(x &
@@ -28,13 +26,16 @@ void big_integer::make_fit() {  // убирает лишние 0 из начал
     }
 }
 
-big_integer::big_integer(bool new_sign, vector<unsigned int> const &new_data) : sign(new_sign), data(new_data) {
+big_integer::big_integer(bool new_sign, vector const &new_data) : sign(new_sign), data(new_data) {
     make_fit();
 }
 
 void big_integer::swap(big_integer &other) noexcept {
-    std::swap(data, other.data);
-    std::swap(sign, other.sign);
+    //std::swap(data, other.data);
+    //std::swap(sign, other.sign);
+    this->sign = other.sign;
+    this->data = other.data;
+    make_fit();
 }
 
 bool big_integer::zero() const {
@@ -178,7 +179,7 @@ big_integer big_integer::operator-() const {
         return big_integer(1u);
     }
     size_t n = length() + 2;
-    vector<unsigned int> temp(n);
+    vector temp(n);
     unsigned long long sum = castUnsignedInt(~digit(0)) +
                              1ULL; // именно так в нашем представлении берется signed унарный минус для представления в unsigned
     unsigned long long carry = sum >> BASE;  //остаточек
@@ -200,7 +201,7 @@ big_integer big_integer::operator-() const {
 }
 
 big_integer big_integer::operator~() const {
-    vector<unsigned int> temp(data);
+    vector temp(data);
     for (size_t i = 0; i < data.size(); ++i) {
         temp[i] = ~data[i];
     }
@@ -239,7 +240,7 @@ big_integer big_integer::operator--(int) {
 big_integer operator&(big_integer const &a, big_integer const &b) {
     size_t maxLength = std::max(a.length(), b.length());
     size_t minLength = std::min(a.length(), b.length());
-    vector<unsigned int> temp(maxLength);
+    vector temp(maxLength);
     for (size_t i = 0; i < minLength; i++) {
         temp[i] = a.digitReal(i) & b.digitReal(i);
     }
@@ -252,7 +253,7 @@ big_integer operator&(big_integer const &a, big_integer const &b) {
 big_integer operator|(big_integer const &a, big_integer const &b) {
     size_t maxLength = std::max(a.length(), b.length());
     size_t minLength = std::min(a.length(), b.length());
-    vector<unsigned int> temp(maxLength);
+    vector temp(maxLength);
     for (size_t i = 0; i < minLength; i++) {
         temp[i] = a.digitReal(i) | b.digitReal(i);
     }
@@ -265,7 +266,7 @@ big_integer operator|(big_integer const &a, big_integer const &b) {
 big_integer operator^(big_integer const &a, big_integer const &b) {
     size_t maxLength = std::max(a.length(), b.length());
     size_t minLength = std::min(a.length(), b.length());
-    vector<unsigned int> temp(maxLength);
+    vector temp(maxLength);
     for (size_t i = 0; i < minLength; i++) {
         temp[i] = a.digitReal(i) ^ b.digitReal(i);
     }
@@ -283,7 +284,7 @@ big_integer operator<<(big_integer const &a, unsigned int b) {
             >> 5;    // если b>32, то div не равен 0 : сдвиг на дофига (больше, чем на одну целую ячейку), div == количество этих целых
     size_t mod = b % BASE;  // size_t mod = b & (BASE - 1); is another way to find mod
     size_t new_size = a.length() + div + 1; // + 1, т.к. mod != 0 обычно
-    vector<unsigned int> temp(new_size);
+    vector temp(new_size);
     temp[div] = castUnsignedInt((unsigned long long) (a.digit(0)) << mod);
     for (size_t i = div + 1; i < new_size; i++) {
         unsigned long long x = (unsigned long long) (a.digit(i - div)) << mod;
@@ -303,7 +304,7 @@ big_integer operator>>(big_integer const &a, unsigned int b) {
     if (div < a.length()) {
         new_size = a.length() - div;
     }
-    vector<unsigned int> temp(new_size);
+    vector temp(new_size);
     for (size_t i = 0; i < new_size; i++) {
         unsigned long long x = (unsigned long long) (a.digitReal(i + div)) >> mod;
         unsigned long long y = (unsigned long long) (a.digit(i + div + 1)) << (BASE - mod);
@@ -376,7 +377,7 @@ bool operator<(big_integer const &a, big_integer const &b) {
             return a.digitReal(i - 1) < b.digitReal(i - 1);
         }
     }
-    return 0;
+    return false;
     //return mpz_cmp(a.mpz, b.mpz) < 0;
 }
 
@@ -439,7 +440,7 @@ std::ostream &operator<<(std::ostream &s, big_integer const &a) {
 big_integer operator+(big_integer const &a, big_integer const &b) {
     size_t maxLength = std::max(a.length(), b.length()) + 2;
     size_t minLength = std::min(a.length(), b.length());
-    vector<unsigned int> temp(maxLength);
+    vector temp(maxLength);
     unsigned long long carry = 0;
     unsigned long long sum = 0;
 
@@ -459,7 +460,7 @@ big_integer operator+(big_integer const &a, big_integer const &b) {
 big_integer operator-(big_integer const &a, big_integer const &b) {
     size_t maxLength = std::max(a.length(), b.length()) + 3;
     size_t minLength = std::min(a.length(), b.length());
-    vector<unsigned int> temp(maxLength);
+    vector temp(maxLength);
     unsigned long long carry = 0;
     unsigned long long sum = 0;
 
@@ -491,7 +492,7 @@ big_integer operator-(big_integer const &a, big_integer const &b) {
     return big_integer(temp.back() & (1 << (BASE - 1)), temp);
 }
 
-void mul_vector(vector<unsigned int> &res, vector<unsigned int> const &a, vector<unsigned int> const &b) {
+void mul_vector(vector &res, vector const &a, vector const &b) {
     size_t aLength = a.size();
     size_t bLength = b.size();
     for (size_t i = 0; i < aLength; i++) {
@@ -507,7 +508,7 @@ void mul_vector(vector<unsigned int> &res, vector<unsigned int> const &a, vector
     }
 }
 
-void mul_big_small(vector<unsigned int> &res, vector<unsigned int> const &a, const unsigned int b) {
+void mul_big_small(vector &res, vector const &a, const unsigned int b) {
     size_t aLength = a.size();
     res.resize(aLength + 1);
     unsigned long long carry = 0, mul = 0, tmp = 0;
@@ -544,6 +545,9 @@ big_integer operator*(big_integer const &a, big_integer const &b) {
     if (a.zero() || b.zero()) {
         return big_integer(0u);
     }
+    if (a.length() > b.length()) {
+        return b * a;
+    }
     big_integer abs_a(a.abs());
     big_integer abs_b(b.abs());
     if (abs_a.length() > abs_b.length()) {
@@ -552,7 +556,7 @@ big_integer operator*(big_integer const &a, big_integer const &b) {
     size_t aLength = abs_a.length();
     size_t bLength = abs_b.length();
     size_t len = (aLength + bLength + 1);
-    vector<unsigned int> temp(len);
+    vector temp(len);
     if (abs_a.length() == 1) {
         mul_big_small(temp, abs_b.data, abs_a.digitReal(0));
     } else {
@@ -585,7 +589,23 @@ int dec_pow(unsigned int st) {
     return preAns * preAns;
 }
 
-big_integer string_to_number(std::string const &s) {
+big_integer::big_integer(std::string const &str) {
+    big_integer res;
+    size_t is_negative = 0;
+    if (str[is_negative] == '-') {
+        is_negative++;
+    }
+    for (size_t i = is_negative; i + 9 <= str.length(); i += 9) {
+        res = res * BASE10 + stoi(str.substr(i, 9));
+    }
+    T mod = (str.length() - is_negative) % 9;
+    if (mod > 0) {
+        res = res * dec_pow(mod) + stoi(str.substr(str.length() - mod));
+    }
+    *this = (is_negative != 0) ? -res : res;
+}
+
+/*big_integer string_to_number(std::string const &s) {
     big_integer res(0);
     size_t j = 0;
     if (s[j] == '-') {
@@ -602,7 +622,7 @@ big_integer string_to_number(std::string const &s) {
 }
 
 big_integer::big_integer(std::string const &str) : big_integer(string_to_number(str)) {}
-
+*/
 unsigned int get_two(const unsigned int a, const unsigned int b, const unsigned int c) {
     unsigned long long res = a;
     res = ((res << BASE) + b) / c;
@@ -620,7 +640,7 @@ unsigned int get_three(const unsigned int a1, const unsigned int a2, const unsig
 }*/
 
 
-void sub_equal_vectors(vector<unsigned int> &a, vector<unsigned int> const &b) {
+void sub_equal_vectors(vector &a, vector const &b) {
     unsigned long long sum = castUnsignedLongLong(~b[0]) + castUnsignedLongLong(a[0]) + 1LL, carry = sum >> BASE;
     a[0] = castUnsignedInt(sum);
     for (size_t i = 1; i < b.size(); i++) {
@@ -630,7 +650,7 @@ void sub_equal_vectors(vector<unsigned int> &a, vector<unsigned int> const &b) {
     }
 }
 
-bool compare_equal_vectors(vector<unsigned int> const &a, vector<unsigned int> const &b) {
+bool compare_equal_vectors(vector const &a, vector const &b) {
     for (size_t i = a.size(); i > 0; i--) {
         if (a[i - 1] != b[i - 1]) {
             return a[i - 1] < b[i - 1];
@@ -639,13 +659,17 @@ bool compare_equal_vectors(vector<unsigned int> const &a, vector<unsigned int> c
     return 0;
 }
 
-vector<unsigned int> div_big_small(vector<unsigned int> const &a, const unsigned int b) {
+vector div_big_small(vector const &a, const unsigned int b) {
     if (b == 0) {
         throw std::runtime_error("Division by zero");
     }
     size_t aLength = a.size();
-    vector<unsigned int> res;
-    res.assign(aLength, 0);
+    vector res;
+    res.resize(aLength);
+    for (size_t i = 0; i < aLength; ++i) {
+        res[i] = 0;
+    }
+    //res.assign(aLength, 0);
     //res.resize(aLength);
     unsigned long long int carry = 0;
     for (int i = aLength - 1; i >= 0; i--) {
@@ -657,7 +681,7 @@ vector<unsigned int> div_big_small(vector<unsigned int> const &a, const unsigned
 }
 
 /*
-unsigned int trial(vector<unsigned int> a, vector<unsigned int> b){
+unsigned int trial(vector a, vector b){
     const size_t aLength = a.size();
     const size_t bLength = b.size();
     if (2<=aLength) {
@@ -729,8 +753,8 @@ big_integer div_nice(big_integer const &a, big_integer const &b) {
 
     const size_t len = aLength - bLength + 1;   // длина результата деления
     const unsigned int divisor = abs_b.data.back();
-    vector<unsigned int> temp(len);
-    vector<unsigned int> dev(bLength + 1), div(bLength + 1, 0);
+    vector temp(len);
+    vector dev(bLength + 1), div(bLength + 1, 0);
     for (size_t i = 0; i < bLength; i++) {
         dev[i] = abs_a.digitReal(aLength + i - bLength);    // correct because abs_a >= abs_b and aLength >= bLength
     }
@@ -911,7 +935,7 @@ borrow := 1 - di:ff div b
         end;
 if borrow < > 0 then overflow
 end*/
-
+/*
 big_integer make_longer(size_t len, big_integer const &a) {
     size_t aL = a.length();
     if (len >= aL) {
@@ -924,7 +948,7 @@ big_integer make_longer(size_t len, big_integer const &a) {
     } else {
         return a;
     }
-}
+}*/
 
 void difference(big_integer &r, big_integer &dq, size_t k) {
     size_t rL = r.length();
@@ -933,12 +957,12 @@ void difference(big_integer &r, big_integer &dq, size_t k) {
     //big_integer r2 = r - make_longer(k + dqL, dq);
 
     if (rL != 0) {
-        int borrow = 0;
-        size_t rL = r.length();
+//        int borrow = 0;
+//        size_t rL = r.length();
         //size_t dqL = dq.length();
         long long int sum = castUnsignedLongLong(r.digitReal(k)) + 1ULL + castUnsignedLongLong(~dq.digitReal(0));
         long long int carry = sum >> BASE;
-        r.data[k]=sum;
+        r.data[k] = sum;
         for (size_t i = 1; i < dqL; ++i) {
             sum = carry + castUnsignedLongLong(r.digitReal(i + k)) + castUnsignedLongLong(~dq.digitReal(i));
             r.data[i + k] = castUnsignedInt(sum);
@@ -984,10 +1008,10 @@ big_integer operator/(big_integer const &a, big_integer const &b) {
     abs_b.make_fit();
 
     const size_t len = aLength - bLength + 1;   // длина результата деления
-    //void div_big_small(vector<unsigned int> &res, vector<unsigned int> const &a, const unsigned int b) {
+    //void div_big_small(vector &res, vector const &a, const unsigned int b) {
     if (bLength == 1) {
         //const size_t len = aLength - bLength + 1;   // длина результата деления
-        //vector<unsigned int> q(len, 0);
+        //vector q(len, 0);
         //q = div_big_small(abs_a.data, abs_b.data[0]);
         big_integer res(a.sign ^ b.sign, div_big_small(abs_a.data, abs_b.data[0]));
         res.correct();
@@ -995,8 +1019,8 @@ big_integer operator/(big_integer const &a, big_integer const &b) {
         //return div_nice(a, b);
     } else {
         //const size_t len = aLength - bLength + 1;   // длина результата деления
-        vector<unsigned int> q(len, 0);
-        vector<unsigned int> dev(bLength + 1), div(bLength + 1, 0);
+        vector q(len, 0);
+        vector dev(bLength + 1), div(bLength + 1, 0);
         big_integer dq;
         big_integer r = abs_a;
         r.my_push(0);
@@ -1055,8 +1079,8 @@ big_integer operator/(big_integer const &a, big_integer const &b) {
 
     const size_t len = aLength - bLength + 1;   // длина результата деления
     const unsigned int divisor = abs_b.data.back();
-    vector<unsigned int> temp(len);
-    vector<unsigned int> dev(bLength + 1), div(bLength + 1, 0);
+    vector temp(len);
+    vector dev(bLength + 1), div(bLength + 1, 0);
     for (size_t i = 0; i < bLength; i++) {
         dev[i] = abs_a.digitReal(aLength + i - bLength);    // correct because abs_a >= abs_b and aLength >= bLength
     }
@@ -1101,17 +1125,17 @@ big_integer operator/(big_integer const &a, big_integer const &b) {
 big_integer operator%(big_integer const &a, big_integer const &b) {
     return a - (a / b) * b;
 }
-
 /*
-big_integer c_real("100000000000000000000000000000000000000000000000000000");
+std::string s = "10000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000";
+big_integer c_real(s);
 
 int main() {
-    big_integer a("948154728221296122");
-    big_integer b("250470475485330530");
+    big_integer a1("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
+    big_integer b1("100000000000000000000000000000000000000");
     //div_nice(a, b);
     //big_integer c  = a*b / b;
-    big_integer c1 = div_nice(a * b, a);
-    big_integer c2 = (a * b) / a;
+    big_integer c1 = a1 + b1;
+    //big_integer c2 = (a * b) / a;
     //big_integer c3 = (a * b) / b;
     // std::string str1 = to_string(c);
     std::string str2 = to_string(c_real);

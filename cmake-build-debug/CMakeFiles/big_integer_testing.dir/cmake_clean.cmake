@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/big_integer_testing.dir/big_integer.cpp.o"
   "CMakeFiles/big_integer_testing.dir/gtest/gtest-all.cc.o"
   "CMakeFiles/big_integer_testing.dir/gtest/gtest_main.cc.o"
+  "CMakeFiles/big_integer_testing.dir/vector/vector.cpp.o"
   "big_integer_testing.pdb"
   "big_integer_testing"
 )

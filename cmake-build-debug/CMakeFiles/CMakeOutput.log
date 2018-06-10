@@ -1,4 +1,4 @@
-The system is: Linux - 4.13.0-41-generic - x86_64
+The system is: Linux - 4.13.0-43-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/g++-7 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8f257/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8f257.dir/build.make CMakeFiles/cmTC_8f257.dir/build
-make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_8f257.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_8f257.dir/testCCompiler.c.o   -c /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_8f257
-/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f257.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8f257.dir/testCCompiler.c.o  -o cmTC_8f257 
-make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_298ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_298ef.dir/build.make CMakeFiles/cmTC_298ef.dir/build
+make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_298ef.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_298ef.dir/testCCompiler.c.o   -c /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_298ef
+/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_298ef.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_298ef.dir/testCCompiler.c.o  -o cmTC_298ef 
+make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8c217/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8c217.dir/build.make CMakeFiles/cmTC_8c217.dir/build
-make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_8c217.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_8c217.dir/CMakeCCompilerABI.c.o   -c /snap/clion/19/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_8c217
-/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c217.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_8c217.dir/CMakeCCompilerABI.c.o  -o cmTC_8c217 
+Run Build Command:"/usr/bin/make" "cmTC_90e97/fast"
+/usr/bin/make -f CMakeFiles/cmTC_90e97.dir/build.make CMakeFiles/cmTC_90e97.dir/build
+make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_90e97.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_90e97.dir/CMakeCCompilerABI.c.o   -c /snap/clion/22/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_90e97
+/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90e97.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_90e97.dir/CMakeCCompilerABI.c.o  -o cmTC_90e97 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -61,24 +61,24 @@ Thread model: posix
 gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3~16.04.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8c217' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc741vCS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_8c217 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_8c217.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8c217' '-mtune=generic' '-march=x86-64'
-make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_90e97' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnnIFNh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_90e97 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_90e97.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_90e97' '-mtune=generic' '-march=x86-64'
+make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_8c217/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_8c217.dir/build.make CMakeFiles/cmTC_8c217.dir/build]
-  ignore line: [make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»]
-  ignore line: [Building C object CMakeFiles/cmTC_8c217.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_8c217.dir/CMakeCCompilerABI.c.o   -c /snap/clion/19/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_8c217]
-  ignore line: [/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c217.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_8c217.dir/CMakeCCompilerABI.c.o  -o cmTC_8c217 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_90e97/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_90e97.dir/build.make CMakeFiles/cmTC_90e97.dir/build]
+  ignore line: [make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»]
+  ignore line: [Building C object CMakeFiles/cmTC_90e97.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_90e97.dir/CMakeCCompilerABI.c.o   -c /snap/clion/22/bin/cmake/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_90e97]
+  ignore line: [/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90e97.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_90e97.dir/CMakeCCompilerABI.c.o  -o cmTC_90e97 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -90,13 +90,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3~16.04.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8c217' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc741vCS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_8c217 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_8c217.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_90e97' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnnIFNh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_90e97 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_90e97.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc741vCS.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccnnIFNh.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -114,7 +114,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_8c217] ==> ignore
+    arg [cmTC_90e97] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o] ==> ignore
@@ -126,7 +126,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_8c217.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_90e97.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -156,17 +156,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c3a6f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c3a6f.dir/build.make CMakeFiles/cmTC_c3a6f.dir/build
-make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_c3a6f.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_c3a6f.dir/feature_tests.c.o   -c /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c3a6f
-/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3a6f.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c3a6f.dir/feature_tests.c.o  -o cmTC_c3a6f 
-make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_aa79e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aa79e.dir/build.make CMakeFiles/cmTC_aa79e.dir/build
+make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_aa79e.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_aa79e.dir/feature_tests.c.o   -c /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_aa79e
+/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa79e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_aa79e.dir/feature_tests.c.o  -o cmTC_aa79e 
+make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -176,17 +176,17 @@ make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c0338/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c0338.dir/build.make CMakeFiles/cmTC_c0338.dir/build
-make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_c0338.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_c0338.dir/feature_tests.c.o   -c /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c0338
-/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0338.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c0338.dir/feature_tests.c.o  -o cmTC_c0338 
-make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_8c9d1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8c9d1.dir/build.make CMakeFiles/cmTC_8c9d1.dir/build
+make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8c9d1.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_8c9d1.dir/feature_tests.c.o   -c /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_8c9d1
+/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c9d1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8c9d1.dir/feature_tests.c.o  -o cmTC_8c9d1 
+make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -196,17 +196,17 @@ make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4e4aa/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4e4aa.dir/build.make CMakeFiles/cmTC_4e4aa.dir/build
-make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_4e4aa.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_4e4aa.dir/feature_tests.c.o   -c /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_4e4aa
-/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e4aa.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4e4aa.dir/feature_tests.c.o  -o cmTC_4e4aa 
-make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_4045c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4045c.dir/build.make CMakeFiles/cmTC_4045c.dir/build
+make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_4045c.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_4045c.dir/feature_tests.c.o   -c /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_4045c
+/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4045c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4045c.dir/feature_tests.c.o  -o cmTC_4045c 
+make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -214,30 +214,30 @@ make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7fd94/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7fd94.dir/build.make CMakeFiles/cmTC_7fd94.dir/build
-make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_7fd94.dir/testCXXCompiler.cxx.o
-/usr/bin/g++-7     -o CMakeFiles/cmTC_7fd94.dir/testCXXCompiler.cxx.o -c /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_7fd94
-/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fd94.dir/link.txt --verbose=1
-/usr/bin/g++-7       -rdynamic CMakeFiles/cmTC_7fd94.dir/testCXXCompiler.cxx.o  -o cmTC_7fd94 
-make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_887a8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_887a8.dir/build.make CMakeFiles/cmTC_887a8.dir/build
+make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_887a8.dir/testCXXCompiler.cxx.o
+/usr/bin/g++-7     -o CMakeFiles/cmTC_887a8.dir/testCXXCompiler.cxx.o -c /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_887a8
+/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_887a8.dir/link.txt --verbose=1
+/usr/bin/g++-7       -rdynamic CMakeFiles/cmTC_887a8.dir/testCXXCompiler.cxx.o  -o cmTC_887a8 
+make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5b3b8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5b3b8.dir/build.make CMakeFiles/cmTC_5b3b8.dir/build
-make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_5b3b8.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/g++-7     -o CMakeFiles/cmTC_5b3b8.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/19/bin/cmake/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_5b3b8
-/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b3b8.dir/link.txt --verbose=1
-/usr/bin/g++-7      -v -rdynamic CMakeFiles/cmTC_5b3b8.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_5b3b8 
+Run Build Command:"/usr/bin/make" "cmTC_912ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_912ef.dir/build.make CMakeFiles/cmTC_912ef.dir/build
+make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_912ef.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++-7     -o CMakeFiles/cmTC_912ef.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/22/bin/cmake/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_912ef
+/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_912ef.dir/link.txt --verbose=1
+/usr/bin/g++-7      -v -rdynamic CMakeFiles/cmTC_912ef.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_912ef 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/g++-7
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -249,24 +249,24 @@ Thread model: posix
 gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3~16.04.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5b3b8' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cckjwWC9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_5b3b8 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_5b3b8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5b3b8' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_912ef' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNQQUjI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_912ef /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_912ef.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_912ef' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_5b3b8/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_5b3b8.dir/build.make CMakeFiles/cmTC_5b3b8.dir/build]
-  ignore line: [make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»]
-  ignore line: [Building CXX object CMakeFiles/cmTC_5b3b8.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/g++-7     -o CMakeFiles/cmTC_5b3b8.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/19/bin/cmake/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_5b3b8]
-  ignore line: [/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b3b8.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/g++-7      -v -rdynamic CMakeFiles/cmTC_5b3b8.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_5b3b8 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_912ef/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_912ef.dir/build.make CMakeFiles/cmTC_912ef.dir/build]
+  ignore line: [make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»]
+  ignore line: [Building CXX object CMakeFiles/cmTC_912ef.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++-7     -o CMakeFiles/cmTC_912ef.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/22/bin/cmake/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_912ef]
+  ignore line: [/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_912ef.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++-7      -v -rdynamic CMakeFiles/cmTC_912ef.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_912ef ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/g++-7]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -278,13 +278,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3~16.04.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_5b3b8' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cckjwWC9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_5b3b8 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_5b3b8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_912ef' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNQQUjI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_912ef /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_912ef.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cckjwWC9.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccNQQUjI.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -302,7 +302,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_5b3b8] ==> ignore
+    arg [cmTC_912ef] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o] ==> ignore
@@ -314,7 +314,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_5b3b8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_912ef.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -340,17 +340,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fbf30/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fbf30.dir/build.make CMakeFiles/cmTC_fbf30.dir/build
-make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_fbf30.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++1z -o CMakeFiles/cmTC_fbf30.dir/feature_tests.cxx.o -c /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_fbf30
-/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbf30.dir/link.txt --verbose=1
-/usr/bin/g++-7       -rdynamic CMakeFiles/cmTC_fbf30.dir/feature_tests.cxx.o  -o cmTC_fbf30 
-make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_9e73a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9e73a.dir/build.make CMakeFiles/cmTC_9e73a.dir/build
+make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_9e73a.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++1z -o CMakeFiles/cmTC_9e73a.dir/feature_tests.cxx.o -c /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_9e73a
+/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e73a.dir/link.txt --verbose=1
+/usr/bin/g++-7       -rdynamic CMakeFiles/cmTC_9e73a.dir/feature_tests.cxx.o  -o cmTC_9e73a 
+make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -413,17 +413,17 @@ make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e19cd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e19cd.dir/build.make CMakeFiles/cmTC_e19cd.dir/build
-make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_e19cd.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++14 -o CMakeFiles/cmTC_e19cd.dir/feature_tests.cxx.o -c /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e19cd
-/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e19cd.dir/link.txt --verbose=1
-/usr/bin/g++-7       -rdynamic CMakeFiles/cmTC_e19cd.dir/feature_tests.cxx.o  -o cmTC_e19cd 
-make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_ab474/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ab474.dir/build.make CMakeFiles/cmTC_ab474.dir/build
+make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_ab474.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++14 -o CMakeFiles/cmTC_ab474.dir/feature_tests.cxx.o -c /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ab474
+/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab474.dir/link.txt --verbose=1
+/usr/bin/g++-7       -rdynamic CMakeFiles/cmTC_ab474.dir/feature_tests.cxx.o  -o cmTC_ab474 
+make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -486,17 +486,17 @@ make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_960f5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_960f5.dir/build.make CMakeFiles/cmTC_960f5.dir/build
-make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_960f5.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++11 -o CMakeFiles/cmTC_960f5.dir/feature_tests.cxx.o -c /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_960f5
-/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_960f5.dir/link.txt --verbose=1
-/usr/bin/g++-7       -rdynamic CMakeFiles/cmTC_960f5.dir/feature_tests.cxx.o  -o cmTC_960f5 
-make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_5a29d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5a29d.dir/build.make CMakeFiles/cmTC_5a29d.dir/build
+make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_5a29d.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++11 -o CMakeFiles/cmTC_5a29d.dir/feature_tests.cxx.o -c /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5a29d
+/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a29d.dir/link.txt --verbose=1
+/usr/bin/g++-7       -rdynamic CMakeFiles/cmTC_5a29d.dir/feature_tests.cxx.o  -o cmTC_5a29d 
+make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -559,17 +559,17 @@ make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_97784/fast"
-/usr/bin/make -f CMakeFiles/cmTC_97784.dir/build.make CMakeFiles/cmTC_97784.dir/build
-make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_97784.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++98 -o CMakeFiles/cmTC_97784.dir/feature_tests.cxx.o -c /home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_97784
-/snap/clion/19/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97784.dir/link.txt --verbose=1
-/usr/bin/g++-7       -rdynamic CMakeFiles/cmTC_97784.dir/feature_tests.cxx.o  -o cmTC_97784 
-make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/make" "cmTC_a8583/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a8583.dir/build.make CMakeFiles/cmTC_a8583.dir/build
+make[1]: вход в каталог «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_a8583.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++98 -o CMakeFiles/cmTC_a8583.dir/feature_tests.cxx.o -c /home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a8583
+/snap/clion/22/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8583.dir/link.txt --verbose=1
+/usr/bin/g++-7       -rdynamic CMakeFiles/cmTC_a8583.dir/feature_tests.cxx.o  -o cmTC_a8583 
+make[1]: выход из каталога «/home/jesus/cpp-course-master/bigint-opt/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

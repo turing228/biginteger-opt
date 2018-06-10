@@ -4,9 +4,8 @@
 #include <cstddef>
 //#include <gmp.h>
 #include <iosfwd>
-#include <vector>
-
-//using std::vector;
+//#include <vector>
+#include "vector/vector.h"
 
 struct big_integer
 {
@@ -76,7 +75,7 @@ struct big_integer
     big_integer abs() const;
     bool is_negative() const;
     void correct();
-    big_integer(bool new_sign, std::vector<unsigned int> const &new_data);
+    big_integer(bool new_sign, vector const &new_data);
     //size_t length() const;
     unsigned int digitReal(size_t ind) const;
 
@@ -84,7 +83,8 @@ struct big_integer
 
     void push_max();
 
-    std::vector<unsigned int> data;
+    //vector<unsigned int> data;
+    vector data;
 
     size_t length() const;
 

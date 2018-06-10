@@ -48,10 +48,10 @@ RM = /snap/clion/22/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jesus/cpp-course-master/bigint
+CMAKE_SOURCE_DIR = /home/jesus/cpp-course-master/bigint-opt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jesus/cpp-course-master/bigint/cmake-build-release
+CMAKE_BINARY_DIR = /home/jesus/cpp-course-master/bigint-opt/cmake-build-release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jesus/cpp-course-master/bigint/cmake-build-release/CMakeFiles /home/jesus/cpp-course-master/bigint/cmake-build-release/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jesus/cpp-course-master/bigint-opt/cmake-build-release/CMakeFiles /home/jesus/cpp-course-master/bigint-opt/cmake-build-release/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jesus/cpp-course-master/bigint/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jesus/cpp-course-master/bigint-opt/cmake-build-release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,6 +231,33 @@ gtest/gtest_main.cc.s:
 	$(MAKE) -f CMakeFiles/big_integer_testing.dir/build.make CMakeFiles/big_integer_testing.dir/gtest/gtest_main.cc.s
 .PHONY : gtest/gtest_main.cc.s
 
+vector/vector.o: vector/vector.cpp.o
+
+.PHONY : vector/vector.o
+
+# target to build an object file
+vector/vector.cpp.o:
+	$(MAKE) -f CMakeFiles/big_integer_testing.dir/build.make CMakeFiles/big_integer_testing.dir/vector/vector.cpp.o
+.PHONY : vector/vector.cpp.o
+
+vector/vector.i: vector/vector.cpp.i
+
+.PHONY : vector/vector.i
+
+# target to preprocess a source file
+vector/vector.cpp.i:
+	$(MAKE) -f CMakeFiles/big_integer_testing.dir/build.make CMakeFiles/big_integer_testing.dir/vector/vector.cpp.i
+.PHONY : vector/vector.cpp.i
+
+vector/vector.s: vector/vector.cpp.s
+
+.PHONY : vector/vector.s
+
+# target to generate assembly for a file
+vector/vector.cpp.s:
+	$(MAKE) -f CMakeFiles/big_integer_testing.dir/build.make CMakeFiles/big_integer_testing.dir/vector/vector.cpp.s
+.PHONY : vector/vector.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +279,9 @@ help:
 	@echo "... gtest/gtest_main.o"
 	@echo "... gtest/gtest_main.i"
 	@echo "... gtest/gtest_main.s"
+	@echo "... vector/vector.o"
+	@echo "... vector/vector.i"
+	@echo "... vector/vector.s"
 .PHONY : help
 
 
